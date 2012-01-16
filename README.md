@@ -14,6 +14,7 @@ to a Stackato cloud.
 **Deploying to stackato**
 
     stackato push -n
+    stackato run python manage.py syncdb
 
 **Default admin user**
 
