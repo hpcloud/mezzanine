@@ -17,3 +17,7 @@ services:
 ignores: 
   - '*.pyc'
   - 'mezzanine.db'
+
+hooks:
+  post-staging:
+    - python manage.py syncdb --noinput
