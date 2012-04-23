@@ -23,6 +23,5 @@ The default admin user credentials are:
     p: mezzanine
 
 You can login with these credentials at /admin. It is recommended that you 
-change this default password, edit stackato.yml and alter the 
-'manage.py changepassword2' command.
+change this default password by running `stackato run python manage.py changepassword`.
 
