@@ -4,6 +4,15 @@ mem: 64M
 
 env:
   DJANGO_SETTINGS_MODULE: settings
+  
+requirements:
+  pypm:
+    - psycopg2
+    - django
+    - pillow
+  
+services:
+  postgresql: postgresql-mezzanine
 
 ignores: 
   - '*.pyc'
