@@ -12,7 +12,7 @@ requirements:
     - pillow
   
 services:
-  postgresql: postgresql-mezzanine
+  postgresql-mezzanine: postgresql
 
 ignores: 
   - '*.pyc'
