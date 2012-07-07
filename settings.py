@@ -128,6 +128,7 @@ STACKATO = 'VCAP_APPLICATION' in os.environ
 
 DATABASES = {}
 if 'DATABASE_URL' in os.environ:
+    import urlparse
     url = urlparse.urlparse(os.environ['DATABASE_URL'])
     DATABASES['default'] = {
         'NAME': url.path[1:],
