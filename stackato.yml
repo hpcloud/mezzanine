@@ -8,7 +8,7 @@ env:
 requirements:
   pypm:
     - psycopg2
-    - django
+    - django<=1.3.999
     - pillow
   
 services:
