@@ -243,6 +243,7 @@ MIDDLEWARE_CLASSES = (
     "django.middleware.csrf.CsrfViewMiddleware",
     "mezzanine.core.middleware.DeviceAwareFetchFromCacheMiddleware",
     "mezzanine.core.middleware.AdminLoginInterfaceSelector",
+    'django.middleware.http.ConditionalGetMiddleware',
 )
 
 # Store these package names here as they may change in the future since
