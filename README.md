@@ -20,7 +20,7 @@ to a Stackato cloud.
 The default admin user credentials are:
 
     u: admin
-    p: mezzanine
+    p: default
 
 You can login with these credentials at /admin. It is recommended that you 
 change this default password by running `stackato run python manage.py changepassword`.
