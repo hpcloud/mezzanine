@@ -13,6 +13,7 @@ min_version:
 services:
   ${name}-db: postgresql
 ignores: 
+  - .git
   - '*.pyc'
   - 'mezzanine.db'
 hooks:
