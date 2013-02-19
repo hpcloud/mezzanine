@@ -1,0 +1,21 @@
+name: mezzanine
+framework: python
+mem: 64M
+env:
+  DJANGO_SETTINGS_MODULE: settings
+requirements:
+  pip:
+    - mezzanine==1.4.0
+    - psycopg2
+min_version:
+  client: 1.4.3
+services:
+  ${name}-db: postgresql
+ignores:
+  - .git
+  - '.pyc'
+  - 'mezzanine.db'
+hooks:
+  post-staging:
+    - python manage.py createdb --noinput
+    - python manage.py collectstatic --noinput
