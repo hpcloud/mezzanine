@@ -7,22 +7,21 @@ that it may not be stable for production environments.
 
 **Local development**
 
-pip install -r requirements.pip  
-python manage.py syncdb --noinput  
-python manage.py runserver
+`pip install -r requirements.pip`  
+`python manage.py syncdb --noinput`  
+`python manage.py runserver`
 
 **Deploying to stackato**
 
-stackato push -n
+`stackato push -n`
 
 **Default admin user**
 
 The default admin user credentials are:
 
-u: admin
+u: admin  
 p: default
 
 You can login with these credentials at /admin. It is recommended that you 
-change this default password by running `stackato run python manage.py changepassword`.
-                        
-                        
+change this default password by running  
+`stackato run python manage.py changepassword`
