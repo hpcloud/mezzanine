@@ -1,11 +1,11 @@
-name: mezzanine
+name: mezzanine-cms
 framework: python
 mem: 64M
 env:
   DJANGO_SETTINGS_MODULE: settings
 requirements:
   pip:
-    - mezzanine==1.4.0
+    - mezzanine
     - psycopg2
 min_version:
   client: 1.4.3
@@ -14,8 +14,8 @@ services:
 ignores:
   - .git
   - '.pyc'
-  - 'mezzanine.db'
+  - '.db'
 hooks:
   post-staging:
-    - python manage.py createdb --noinput
+    - python manage.py syncdb --noinput
     - python manage.py collectstatic --noinput
