@@ -7,8 +7,8 @@ that it may not be stable for production environments.
 
 **Local development**
 
-pip install -r requirements.pip
-python manage.py syncdb --noinput
+pip install -r requirements.pip  
+python manage.py syncdb --noinput  
 python manage.py runserver
 
 **Deploying to stackato**
