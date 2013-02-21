@@ -6,7 +6,7 @@ env:
 requirements:
   pip:
     - mezzanine
-    - psycopg2
+    - mysql-python
 min_version:
   client: 1.4.3
 services:
