@@ -10,7 +10,7 @@ requirements:
 min_version:
   client: 1.4.3
 services:
-  ${name}-db: postgresql
+  ${name}-db: mysql
 ignores:
   - .git
   - '.pyc'
@@ -19,3 +19,5 @@ hooks:
   post-staging:
     - python manage.py syncdb --noinput
     - python manage.py collectstatic --noinput
+processes:
+    web: $STACKATO_UWSGI --check-static $HOME/static
