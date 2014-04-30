@@ -1,4 +1,4 @@
-name: mezzanine-cms
+name: mezzanine
 framework: python
 mem: 128M
 env:
