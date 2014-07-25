@@ -1,1 +1,2 @@
 Mezzanine
+mysql-python

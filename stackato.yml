@@ -1,12 +1,7 @@
 name: mezzanine
-framework: python
 mem: 128M
 env:
   DJANGO_SETTINGS_MODULE: settings
-requirements:
-  pip:
-  - mezzanine
-  - mysql-python
 min_version:
   client: 1.4.3
 services:
@@ -19,5 +14,3 @@ hooks:
   post-staging:
   - python manage.py syncdb --noinput
   - python manage.py collectstatic --noinput
-processes:
-  web: $STACKATO_UWSGI --check-static $HOME/static
