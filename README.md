@@ -24,4 +24,4 @@ p: default
 
 You can login with these credentials at /admin. It is recommended that you 
 change this default password by running  
-`stackato run python manage.py changepassword`
+`stackato run python manage.py changepassword admin`
