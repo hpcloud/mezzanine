@@ -10,7 +10,7 @@ applications:
         default: settings
     hooks:
       post-staging:
-      - python manage.py syncdb --noinput
+      - python manage.py createdb --noinput
       - python manage.py collectstatic --noinput
     ignores:
     - .git
