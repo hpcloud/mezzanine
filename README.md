@@ -2,8 +2,8 @@ Mezzanine
 ---------
 
 This a vanilla Mezzanine CMS project that is ready to deploy straight 
-to a Stackato cloud. This is the development branch of this repo, meaning
-that it may not be stable for production environments.
+to a HPE Helion Stackato cloud. This is the development branch of this repo,
+meaning that it may not be stable for production environments.
 
 **Local development**
 
@@ -11,7 +11,7 @@ that it may not be stable for production environments.
 `python manage.py syncdb --noinput`  
 `python manage.py runserver`
 
-**Deploying to stackato**
+**Deploying to HPE Helion Stackato**
 
 `stackato push -n`
 
