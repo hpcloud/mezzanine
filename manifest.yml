@@ -1,7 +1,7 @@
 applications:
 - name: mezzanine
   docker_image: stackatoapps/mezzanine:latest
-  mem: 128M
+  memory: 128M
   services:
     ${name}-db:
       type: mysql
