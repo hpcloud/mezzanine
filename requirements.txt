@@ -1,1 +1,3 @@
 Mezzanine
+mysql-python
+pillow==2.9.0
